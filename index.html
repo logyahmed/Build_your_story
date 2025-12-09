@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اصنع قصة تبيع عنك… قبل ما تتكلم أنت!</title>
+
+  <!-- Performance & fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Favicons & SEO -->
+  <link rel="icon" href="/favicon.ico">
+  <meta name="description" content="دليل عملي لبناء قصة تسويقية تقنع العملاء وتزيد التحويلات.">
+  <meta property="og:title" content="قصة تبيع عنك">
+  <meta property="og:description" content="دليل عملي لبناء قصة تسويقية تقنع العملاء وتزيد التحويلات.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_SA">
+  <meta name="robots" content="index, follow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="قصة تبيع عنك">
+  <meta name="twitter:description" content="دليل عملي لبناء قصة تسويقية تقنع العملاء وتزيد التحويلات.">
+  <!-- Basic CSP (adjust on server for stricter control) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;">
+
+  <style>
+    :root {
+      --bg: #050816;
+      --bg-alt: #0b1020;
+      --card: #111827;
+      --accent: #f97316;
+      --accent-soft: rgba(249, 115, 22, 0.08);
+      --accent-strong: #ea580c;
+      --text: #f9fafb;
+      --text-soft: #d1d5db;
+      --border: #1f2933;
+      --radius-lg: 18px;
+      --radius-xl: 26px;
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.6);
+      --shadow-card: 0 16px 40px rgba(15, 23, 42, 0.8);
+      --transition: 0.25s ease;
+    }
+
+    /* Accessibility helpers */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      background: #111827;
+      color: #fff;
+      padding: 8px 12px;
+      z-index: 9999;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .skip-link:focus {
+      left: 1rem;
+      top: 1rem;
+    }
+
+    /* Visible focus for keyboard users */
+    .btn:focus-visible,
+    a:focus-visible {
+      outline: 3px solid rgba(249,115,22,0.6);
+      outline-offset: 3px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Tajawal", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #111827 0, #020617 40%, #000 100%);
+      color: var(--text);
+      line-height: 1.8;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Layout */
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 4rem;
+    }
+
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: linear-gradient(to bottom, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.85), transparent);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+    }
+
+    .nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .nav-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 20% 20%, #f97316, #ea580c 45%, #0f172a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: #0b1120;
+      box-shadow: 0 8px 24px rgba(249, 115, 22, 0.35);
+    }
+
+    .nav-title {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.9rem;
+    }
+
+    .nav-title span:first-child {
+      font-weight: 700;
+    }
+
+    .nav-title span:last-child {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .nav-cta small {
+      font-size: 0.78rem;
+      color: #9ca3af;
+    }
+
+    .btn {
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition), border-color var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      padding: 0.6rem 1.4rem;
+      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+      color: #0b1120;
+      box-shadow: 0 10px 30px rgba(234, 88, 12, 0.45);
+      font-size: 0.88rem;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 40px rgba(234, 88, 12, 0.55);
+    }
+
+    .btn-outline {
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      color: var(--text-soft);
+      font-size: 0.78rem;
+      background: radial-gradient(circle at top, rgba(148, 163, 184, 0.12), transparent 55%);
+    }
+
+    .btn-outline:hover {
+      border-color: rgba(249, 115, 22, 0.8);
+      color: var(--accent);
+    }
+
+    main {
+      flex: 1;
+    }
+
+    section {
+      padding: 3rem 0 0;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .section-eyebrow {
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #f97316;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-soft);
+      max-width: 560px;
+    }
+
+    .section-header {
+      margin-bottom: 1.8rem;
+    }
+
+    /* Hero */
+    .hero {
+      padding-top: 2.75rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3.5fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.75rem 0.25rem 0.5rem;
+      border-radius: 999px;
+      background: radial-gradient(circle at 20% 0, rgba(248, 250, 252, 0.18), rgba(15, 23, 42, 0.95));
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      margin-bottom: 1.1rem;
+      font-size: 0.78rem;
+      color: var(--text-soft);
+    }
+
+    .hero-badge-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 30%, #f9fafb, #22c55e 50%, #16a34a 100%);
+      box-shadow: 0 0 16px rgba(34, 197, 94, 0.65);
+    }
+
+    .hero-title {
+      font-size: clamp(1.9rem, 3.1vw, 2.4rem);
+      line-height: 1.4;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-title span.highlight {
+      background: linear-gradient(135deg, #f97316, #fb923c);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 800;
+    }
+
+    .hero-lead {
+      font-size: 0.98rem;
+      color: var(--text-soft);
+      max-width: 540px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .hero-secondary-link {
+      font-size: 0.85rem;
+      color: #cbd5f5;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+      cursor: pointer;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    .hero-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-meta span::before {
+      content: "•";
+      color: rgba(148, 163, 184, 0.7);
+    }
+
+    .hero-card {
+      background: radial-gradient(circle at top, rgba(248, 250, 252, 0.04), rgba(15, 23, 42, 0.98));
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      padding: 1.5rem 1.4rem;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card-label {
+      font-size: 0.78rem;
+      color: #9ca3af;
+      margin-bottom: 0.4rem;
+    }
+
+    .hero-card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .hero-card-text {
+      font-size: 0.86rem;
+      color: var(--text-soft);
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-card-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(249, 115, 22, 0.14);
+      color: #fed7aa;
+      font-size: 0.76rem;
+    }
+
+    .hero-card-tag-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #fed7aa;
+    }
+
+    .hero-card-glow {
+      position: absolute;
+      inset-inline-start: -35%;
+      inset-block-end: -40%;
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(249, 115, 22, 0.3), transparent 60%);
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    /* Cards / sections */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.94));
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148, 163, 184, 0.26);
+      padding: 1.3rem 1.25rem;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-accent {
+      border-image: linear-gradient(135deg, rgba(249, 115, 22, 0.75), rgba(15, 23, 42, 0.9)) 1;
+    }
+
+    .card-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.18rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      font-size: 0.78rem;
+      color: #e5e7eb;
+      margin-bottom: 0.55rem;
+    }
+
+    .card-tag-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .card-title {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .card-sub {
+      font-size: 0.86rem;
+      color: var(--text-soft);
+      margin-bottom: 0.55rem;
+    }
+
+    .card-list {
+      font-size: 0.86rem;
+      color: var(--text-soft);
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .card-list li::before {
+      content: "–";
+      color: #9ca3af;
+      margin-left: 0.35rem;
+    }
+
+    /* Numbered results */
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+    }
+
+    .result-item {
+      background: radial-gradient(circle at top, rgba(15, 23, 42, 0.9), #020617);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      padding: 1rem 1rem 0.95rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .result-number {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #fde68a;
+      margin-bottom: 0.1rem;
+    }
+
+    .result-title {
+      font-size: 0.96rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .result-text {
+      font-size: 0.84rem;
+      color: var(--text-soft);
+    }
+
+    .result-glow {
+      position: absolute;
+      inset-inline-start: -25%;
+      inset-block-end: -40%;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(251, 191, 36, 0.2), transparent 60%);
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    /* Pricing / metrics */
+    .metrics-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 1.3rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .metric {
+      flex: 1 1 110px;
+      min-width: 0;
+      padding: 0.9rem 0.9rem 0.8rem;
+      background: radial-gradient(circle at top, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.9));
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      text-align: center;
+    }
+
+    .metric-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.1rem;
+    }
+
+    .metric-label {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
+
+    .quote-block {
+      margin-top: 0.5rem;
+      padding: 0.85rem 0.9rem;
+      border-radius: 16px;
+      border: 1px dashed rgba(148, 163, 184, 0.5);
+      background: rgba(15, 23, 42, 0.9);
+      font-size: 0.84rem;
+      color: #e5e7eb;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1rem;
+    }
+
+    .testimonial {
+      background: radial-gradient(circle at top, rgba(15, 23, 42, 0.95), #020617);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      padding: 1rem 1rem 0.9rem;
+      font-size: 0.86rem;
+      color: var(--text-soft);
+    }
+
+    .testimonial-footer {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      color: #e5e7eb;
+    }
+
+    .testimonial-footer span {
+      color: #9ca3af;
+      font-size: 0.78rem;
+    }
+
+    /* CTA bottom */
+    .cta-final {
+      margin-top: 2.1rem;
+      padding: 1.5rem 1.4rem;
+      border-radius: var(--radius-xl);
+      background: radial-gradient(circle at top, rgba(249, 115, 22, 0.4), rgba(15, 23, 42, 0.98));
+      border: 1px solid rgba(251, 191, 36, 0.6);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.9);
+      text-align: center;
+    }
+
+    .cta-final h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .cta-final p {
+      font-size: 0.9rem;
+      color: #fef9c3;
+      margin-bottom: 1.1rem;
+    }
+
+    .cta-final .btn-primary {
+      padding-inline: 2.1rem;
+      font-size: 0.95rem;
+    }
+
+    .cta-final-note {
+      margin-top: 0.7rem;
+      font-size: 0.78rem;
+      color: #fee2e2;
+    }
+
+    footer {
+      border-top: 1px solid rgba(31, 41, 55, 0.9);
+      margin-top: 2.5rem;
+      padding-top: 1.4rem;
+      padding-bottom: 1.4rem;
+      font-size: 0.78rem;
+      color: #9ca3af;
+      text-align: center;
+    }
+
+    footer small {
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+
+    footer span {
+      color: #6b7280;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 5fr) minmax(0, 4.2fr);
+      }
+
+      .hero {
+        padding-top: 3.1rem;
+      }
+
+      .section-header-flex {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 1.5rem;
+      }
+
+      .section-subtitle {
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nav {
+        padding-inline: 1rem;
+      }
+      .hero-title {
+        font-size: 1.7rem;
+      }
+      .hero-meta {
+        gap: 0.6rem;
+      }
+      .card,
+      .hero-card,
+      .cta-final {
+        padding: 1.1rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">تخطي إلى المحتوى</a>
+  <div class="page">
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav-brand">
+        <div class="nav-logo">ق</div>
+        <div class="nav-title">
+          <span>قصة تبيع عنك</span>
+          <span>إطار عملي لصناعة قصة بيع مقنعة</span>
+        </div>
+      </div>
+      <div class="nav-cta">
+        <small>نسخة إلكترونية PDF + نموذج تطبيقي</small>
+        <a href="#buy" class="btn btn-primary">
+          احصل على نسختك الآن
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <!-- Hero -->
+      <section class="hero" id="top">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              <span>تعلّم كيف تجعل قصتك تبيع قبل ما تتكلم أنت</span>
+            </div>
+            <h1 class="hero-title">
+              اصنع <span class="highlight">قصة تبيع عنك…</span><br />
+              قبل ما تتكلم أنت!
+            </h1>
+            <p class="hero-lead">
+              كتابك الإلكتروني الجديد يكشف لك أقوى إطار لصناعة قصة تسويقية تغيّر طريقة الناس في رؤية خدمتك أو منتجك. توقف عن الكلام العشوائي وابدأ البيع بوضوح واحترافية.
+            </p>
+
+            <div class="hero-cta-row">
+              <a href="#buy" class="btn btn-primary">
+                احصل على النسخة الإلكترونية الآن
+              </a>
+              <a href="#why" class="hero-secondary-link">اكتشف المزيد عن محتوى الكتاب</a>
+            </div>
+
+            <div class="hero-meta">
+              <span>كتاب تطبيقي – ليس نظريًا</span>
+              <span>مناسب للمسوّقين، المستقلين، وأصحاب المشاريع</span>
+              <span>يشمل نموذج قصة جاهز للتطبيق فورًا</span>
+            </div>
+          </div>
+
+          <aside class="hero-card">
+            <div class="hero-card-glow"></div>
+            <p class="hero-card-label">ما الذي ستحصل عليه فعليًا؟</p>
+            <h2 class="hero-card-title">دليل عملي لبناء قصة بيع احترافية</h2>
+            <p class="hero-card-text">
+              هذا ليس كتابًا نظريًا مليئًا بالمصطلحات المعقدة. هو إطار واضح يمشي معك خطوة بخطوة لبناء قصة بيع تخلي العميل يفهم خدمتك بسرعة، يثق فيك، ويتحمّس للشراء دون مبالغة أو تعقيد.
+            </p>
+            <div class="hero-card-tag">
+              <span class="hero-card-tag-dot"></span>
+              <span>طبّق الإطار على صفحة هبوط، إعلان، بايو، أو عرض تقديمي</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Challenges -->
+      <section id="problems">
+        <div class="section-header">
+          <p class="section-eyebrow">هل تواجه هذه التحديات؟</p>
+          <h2 class="section-title">هل تواجه هذه التحديات في عملك؟</h2>
+          <p class="section-subtitle">
+            إذا كنت تعاني من واحدة أو أكثر من هذه التحديات، فهذا الكتاب صُمم خصيصًا لك ليعالج جذور المشكلة، ليس فقط مظاهرها.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card card-accent">
+            <div class="card-tag">
+              <span class="card-tag-dot"></span>
+              <span>صعوبة في الشرح</span>
+            </div>
+            <h3 class="card-title">تحس أنك تقدّم خدمة قوية… لكن ما تعرف تشرحها</h3>
+            <p class="card-sub">
+              عند محاولة شرح خدمتك للعملاء، تتعثر في الكلمات ولا تعرف من أين تبدأ أو كيف تنهي. الكلام يطول، الرسالة تضيع، والعميل يفقد الاهتمام.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">
+              <span class="card-tag-dot"></span>
+              <span>عدم وضوح الرسالة</span>
+            </div>
+            <h3 class="card-title">رسالتك التسويقية مشتتة وغير واضحة</h3>
+            <p class="card-sub">
+              تحاول توصيل فكرتك بطرق مختلفة، لكن تحس أن الناس ما يفهمون القيمة الحقيقية اللي تقدمها. ما فيه خط واضح يربط كل ما تقوله.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-tag">
+              <span class="card-tag-dot"></span>
+              <span>ضعف الإقناع</span>
+            </div>
+            <h3 class="card-title">تشرح كثير… لكن لا أحد يشتري</h3>
+            <p class="card-sub">
+              حتى لو سردت كل ميزات منتجك أو خدمتك، تلاحظ أن العملاء ما يتحمسون للشراء. في شيء ناقص في طريقة تقديمك للعرض، وما تعرف بالضبط وش هو.
+            </p>
+          </article>
+        </div>
+
+        <p style="margin-top: 1.2rem; font-size:0.9rem; color:var(--text-soft);">
+          إذا كنت تعاني من واحدة أو أكثر من هذه المشاكل، فأنت في المكان الصحيح. هذا الكتاب صُمم لحل هذه التحديات بشكل جذري وعملي.
+        </p>
+      </section>
+
+      <!-- About book -->
+      <section id="why">
+        <div class="section-header section-header-flex">
+          <div>
+            <p class="section-eyebrow">عن الكتاب</p>
+            <h2 class="section-title">ما هو هذا الكتاب الإلكتروني؟</h2>
+          </div>
+          <p class="section-subtitle">
+            "قصة تبيع عنك" هو دليلك العملي لبناء قصة بيع قوية وواقعية يمكنك تطبيقها على أي خدمة أو منتج، مهما كان مجالك.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card card-accent">
+            <h3 class="card-title">دليلك العملي لبناء قصة بيع احترافية</h3>
+            <p class="card-sub">
+              الكتاب يقدم لك خارطة طريق جاهزة تمشي عليها خطوة بخطوة، سواء كنت تكتب قصة مشروعك الناشئ، محتوى إعلاني، صفحة هبوط، أو حتى بايو حساباتك على السوشيال ميديا.
+            </p>
+            <ul class="card-list">
+              <li>إطار واضح لبناء قصة تسويقية متكاملة</li>
+              <li>لغة بسيطة بعيدة عن المصطلحات المعقدة</li>
+              <li>أمثلة حية وتمارين تطبيقية</li>
+              <li>إمكانية إعادة استخدام الإطار لكل مشاريعك</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">لماذا هذا الكتاب مختلف؟</h3>
+            <ul class="card-list">
+              <li><strong>تحويل وليس وصف:</strong> تتحول خدمتك من "وصف ممل" إلى "قصة حية" يعيشها العميل.</li>
+              <li><strong>وضوح مطلق:</strong> تبني رسالة يفهمها أي شخص من أول مرة بدون تعقيد.</li>
+              <li><strong>لغة تقنع:</strong> تشرح منتجك بلغة بسيطة تقنع العميل دون ضغط أو إلحاح.</li>
+              <li><strong>محتوى يجذب ويبيع:</strong> تكتب محتوى يجذب الانتباه ويدفع للشراء بشكل طبيعي.</li>
+            </ul>
+            <p class="card-sub" style="margin-top:0.6rem;">
+              ستحصل كذلك على نموذج قصة جاهز للتطبيق… فقط املأ الفراغات لتحصل على قصة بيع محترفة خلال أقل من 30 دقيقة!
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Who it's for -->
+      <section id="who">
+        <div class="section-header">
+          <p class="section-eyebrow">لمن هذا الكتاب؟</p>
+          <h2 class="section-title">من يحتاج هذا الكتاب؟</h2>
+          <p class="section-subtitle">
+            لأن الإطار عام ومرن، فهو يناسب أي شخص يعتمد على الكلام والمحتوى لبيع خدماته أو منتجاته.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3 class="card-title">المسوّقون وصنّاع المحتوى</h3>
+            <p class="card-sub">
+              إذا كنت مسؤولًا عن كتابة المحتوى التسويقي لشركتك أو لعملائك، هذا الإطار سيوفر عليك ساعات من التفكير والتجربة، ويمنحك صيغة مجرّبة تعمل في كل مرة.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">المستقلون وأصحاب المشاريع الصغيرة</h3>
+            <p class="card-sub">
+              إذا كنت تعمل بشكل مستقل أو لديك مشروع صغير، غالبًا تواجه صعوبة في تسويق نفسك. هذا الكتاب يعلمك كيف تبني قصة شخصية قوية تجذب العملاء المناسبين.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">مقدّمو الخدمات المميزة</h3>
+            <p class="card-sub">
+              تقدّم خدمة عالية الجودة لكن تواجه صعوبة في شرح قيمتها؟ هذا الكتاب يعطيك لغة واضحة تبيع خدمتك نفسها.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">من يريد صفحة هبوط احترافية وزيادة التحويلات</h3>
+            <p class="card-sub">
+              ستتعلم كيف تكتب كل عنصر في صفحة الهبوط — من العنوان الرئيسي حتى دعوة الشراء — بطريقة مقنعة، وكيف تستخدم نفس الإطار لرفع التحويلات بدون زيادة ميزانية الإعلانات.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section id="results">
+        <div class="section-header">
+          <p class="section-eyebrow">النتائج المتوقعة</p>
+          <h2 class="section-title">ماذا ستحقق بعد قراءة هذا الكتاب؟</h2>
+        </div>
+
+        <div class="results-grid">
+          <article class="result-item">
+            <div class="result-glow"></div>
+            <p class="result-number">01</p>
+            <h3 class="result-title">كتابة قصة كاملة خلال دقائق</h3>
+            <p class="result-text">
+              باستخدام النموذج الجاهز، ستكتب قصة خدمتك أو منتجك بشكل احترافي في أقل من نصف ساعة، بدلًا من أيام من التفكير والحيرة.
+            </p>
+          </article>
+
+          <article class="result-item">
+            <div class="result-glow"></div>
+            <p class="result-number">02</p>
+            <h3 class="result-title">صياغة رسالة تميزك عن المنافسين</h3>
+            <p class="result-text">
+              ستتعلم كيف تخلق رسالة تسويقية فريدة تبرز قيمتك الحقيقية، وتجعلك الخيار الواضح في ذهن العميل.
+            </p>
+          </article>
+
+          <article class="result-item">
+            <div class="result-glow"></div>
+            <p class="result-number">03</p>
+            <h3 class="result-title">تحويل الأفكار لمحتوى مقنع</h3>
+            <p class="result-text">
+              أي فكرة معقدة ستصبح قادرًا على تحويلها لمحتوى مفهوم وجذاب يشد انتباه الجمهور ويحفزه على التفاعل.
+            </p>
+          </article>
+
+          <article class="result-item">
+            <div class="result-glow"></div>
+            <p class="result-number">04</p>
+            <h3 class="result-title">كتابة محتوى يبيع</h3>
+            <p class="result-text">
+              سواء كان إعلانًا، صفحة هبوط، بايو لحساباتك، أو منشورًا على السوشيال ميديا — ستكتب كل شيء بطريقة تدفع للشراء.
+            </p>
+          </article>
+
+          <article class="result-item">
+            <div class="result-glow"></div>
+            <p class="result-number">05</p>
+            <h3 class="result-title">بناء هوية قصصية واضحة</h3>
+            <p class="result-text">
+              مشروعك سيكون له قصة مميزة وواضحة يمكن تكرارها في كل قنوات التسويق، مما يخلق تجربة متسقة ومقنعة للعميل.
+            </p>
+          </article>
+        </div>
+
+        <div class="quote-block">
+          <strong>باختصار…</strong> ستتوقف عن الكلام العشوائي، وتبدأ تبيع بوضوح واحترافية مطلقة.
+        </div>
+      </section>
+
+      <!-- What is included -->
+      <section id="included">
+        <div class="section-header">
+          <p class="section-eyebrow">ماذا يشمل التحميل؟</p>
+          <h2 class="section-title">ماذا ستحصل عند شراء الكتاب؟</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3 class="card-title">نسخة PDF عالية الجودة</h3>
+            <p class="card-sub">
+              كتاب إلكتروني منسّق باحترافية، سهل القراءة على أي جهاز — كمبيوتر، تابلت، أو جوال.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">نموذج جاهز لقصة البيع</h3>
+            <p class="card-sub">
+              قالب قابل للتعبئة يرشدك خطوة بخطوة لكتابة قصتك الخاصة بدون تعقيد أو تفكير زائد.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">أمثلة تطبيقية حقيقية</h3>
+            <p class="card-sub">
+              دراسات حالة ونماذج من مشاريع فعلية تساعدك على فهم كيفية تطبيق الإطار على مجالك.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">خطوات عملية واضحة</h3>
+            <p class="card-sub">
+              كل فصل يحتوي على تمارين وأنشطة تطبيقية تضمن أنك تفهم وتطبق فورًا.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">قابل للاستخدام لأي مشروع</h3>
+            <p class="card-sub">
+              الإطار مرن ويعمل مع أي نوع من الخدمات أو المنتجات — من الاستشارات إلى المتاجر الإلكترونية.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">وصول فوري بعد الدفع</h3>
+            <p class="card-sub">
+              بمجرد إتمام عملية الشراء، يصلك الكتاب مباشرة إلى بريدك الإلكتروني — لا انتظار، لا تعقيد.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Pricing / Buy -->
+      <section id="buy">
+        <div class="section-header">
+          <p class="section-eyebrow">استثمار صغير… أثر كبير</p>
+          <h2 class="section-title">استثمار واحد… يغيّر طريقة تواصلك للأبد</h2>
+          <p class="section-subtitle">
+            تخيّل كم عميل إضافي ممكن تكسب، وكم فرصة ما راح تضيع، فقط لأن قصتك صارت أوضح وأقوى.
+          </p>
+        </div>
+
+        <div class="card card-accent">
+          <h3 class="card-title">السعر الحالي</h3>
+          <p class="card-sub">
+            السعر الحالي هو استثمار رمزي مقارنة بالقيمة الحقيقية التي ستحصل عليها من وضوح رسالتك وزيادة قوة إقناعك.
+          </p>
+
+          <div class="metrics-row">
+            <div class="metric">
+              <div class="metric-value">1</div>
+              <div class="metric-label">كتاب واحد يغيّر طريقة تواصلك</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">30</div>
+              <div class="metric-label">دقيقة فقط لكتابة قصة بيع كاملة</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">∞</div>
+              <div class="metric-label">استخدامات لا نهائية لكل مشاريعك</div>
+            </div>
+          </div>
+
+          <p class="card-sub" style="margin-top:0.5rem;">
+            <strong>السعر الخاص الآن:</strong> XX ريال سعودي فقط.
+          </p>
+
+          <div style="margin-top:1rem; display:flex; flex-wrap:wrap; gap:0.8rem; align-items:center;">
+            <a href="#checkout" class="btn btn-primary">اشترِ الكتاب الآن</a>
+            <span style="font-size:0.8rem; color:#9ca3af;">دفع آمن 100% – يصلك الكتاب فورًا بعد الدفع</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials">
+        <div class="section-header">
+          <p class="section-eyebrow">آراء القرّاء</p>
+          <h2 class="section-title">ماذا يقول من قرأ الكتاب؟</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial">
+            <p>
+              "أول مرة أعرف كيف أشرح خدمتي بدون تعقيد… والنتيجة؟ عملاء أكثر وسهولة أكبر في الإقناع. الكتاب فعلاً غيّر طريقة كلامي مع العملاء وخلاني أفهم إيش يبغون يسمعون بالضبط."
+            </p>
+            <div class="testimonial-footer">
+              — عبدالله <span>・ مستقل في التصميم الجرافيكي</span>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <p>
+              "الإطار غيّر طريقة كتابتي للمحتوى بالكامل. صرت أعرف وش أكتب بالضبط، ووش الرسالة اللي تلمس العميل. المحتوى اللي أنتجه الحين أقوى بكثير وعليه تفاعل وتحويلات أعلى بشكل ملحوظ."
+            </p>
+            <div class="testimonial-footer">
+              — نورة <span>・ مسوّقة رقمية</span>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <p>
+              "كنت دايمًا أحس أن خدمتي قوية لكن ما أعرف كيف أشرحها. بعد ما طبقت الإطار الموجود في الكتاب، صارت رسالتي واضحة جدًا. العملاء الحين يفهمون بسرعة ويقررون يشتغلون معي من أول اجتماع."
+            </p>
+            <div class="testimonial-footer">
+              — خالد <span>・ صاحب وكالة استشارات</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section id="checkout">
+        <div class="cta-final">
+          <h2>جاهز تبني قصة تبيع وتبقى في ذهن عملائك؟</h2>
+          <p>
+            حان الوقت للتغيير. توقف عن التخبّط في شرح خدمتك، وتوقف عن كتابة محتوى لا يحقق نتائج، وتوقف عن خسارة عملاء محتملين بسبب رسالة غير واضحة.
+          </p>
+          <a href="#buy" class="btn btn-primary">اشترِ الكتاب الآن</a>
+          <div class="cta-final-note">
+            الاستثمار الأذكى هو الاستثمار في تطوير قدرتك على التواصل والإقناع. ابدأ اليوم.
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <small>© 2025. جميع الحقوق محفوظة.</small>
+        <span>قصة تبيع عنك – إطار عملي لصناعة قصة بيع مقنعة.</span>
+      </footer>
+    </div>
+  </main>
+</div>
+</body>
+</html>
