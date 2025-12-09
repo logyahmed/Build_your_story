@@ -1,0 +1,17 @@
+{
+  "name": "build-your-story",
+  "version": "1.0.0",
+  "description": "دليل عملي لبناء قصة تسويقية تقنع العملاء وتزيد التحويلات",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build required'",
+    "start": "echo 'Static site ready to serve'"
+  },
+  "keywords": [
+    "marketing",
+    "storytelling",
+    "sales"
+  ],
+  "author": "",
+  "license": "ISC"
+}
