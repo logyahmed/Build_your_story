@@ -676,6 +676,13 @@
       .cta-final {
         padding: 1.1rem 1rem;
       }
+
+      /* load a lighter hero background image on small screens */
+      .hero::before {
+        background-image: url('/images/hero-bg-sm.jpg');
+        background-size: cover;
+        background-position: center;
+      }
     }
   </style>
 </head>
