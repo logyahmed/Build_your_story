@@ -249,10 +249,9 @@
       position: relative;
       padding-top: 2.75rem;
       overflow: hidden;
-      /* background image directly on hero with a semi-opaque white overlay
-         to make the image appear faded (~35% visible). Adjust overlay alpha
-         to change visible intensity. */
-      background: linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)), url('/images/hero-bg.jpg');
+      /* background image directly on hero with a semi-opaque black overlay
+        to darken the image slightly. Adjust overlay alpha to change visible intensity. */
+      background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('/images/hero-bg.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -672,7 +671,7 @@
 
       /* load a lighter hero background image on small screens */
       .hero {
-        background: linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)), url('/images/hero-bg-sm.jpg');
+        background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('/images/hero-bg-sm.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
