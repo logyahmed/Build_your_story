@@ -249,20 +249,13 @@
       position: relative;
       padding-top: 2.75rem;
       overflow: hidden;
-    }
-
-    /* faint background image inside hero (20% opacity) */
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image: url('/images/hero-bg.jpg');
+      /* background image directly on hero with a semi-opaque white overlay
+         to make the image appear faded (~35% visible). Adjust overlay alpha
+         to change visible intensity. */
+      background: linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)), url('/images/hero-bg.jpg');
       background-size: cover;
       background-position: center;
-      opacity: 0.2;
-      pointer-events: none;
-      z-index: 0;
-      filter: saturate(0.9) blur(0px);
+      background-repeat: no-repeat;
     }
 
     .hero-grid {
@@ -678,10 +671,11 @@
       }
 
       /* load a lighter hero background image on small screens */
-      .hero::before {
-        background-image: url('/images/hero-bg-sm.jpg');
+      .hero {
+        background: linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)), url('/images/hero-bg-sm.jpg');
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
       }
     }
   </style>
